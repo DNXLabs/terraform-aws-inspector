@@ -4,6 +4,16 @@
 [![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-template)](https://github.com/DNXLabs/terraform-aws-template/blob/master/LICENSE)
 
 <!--- BEGIN_TF_DOCS --->
+This module creates all infrastructure necessary to enable Amazon Inspector.
+
+The following resources will be created:
+
+ - Cloudwatch events rules and targets
+ - IAM roles and Policies
+ - AWS Inspector assessment target and templates
+ - Define assessment duration
+ - Include ruleset in the Inspector assessment. (CVE,CIS,Security Best Pratices and Network reachability)
+
 
 ## Requirements
 
