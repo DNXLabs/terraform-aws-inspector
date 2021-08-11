@@ -3,7 +3,7 @@
 [![Lint Status](https://github.com/DNXLabs/terraform-aws-inspector/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-aws-inspector/actions)
 [![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-inspector)](https://github.com/DNXLabs/terraform-aws-inspector/blob/master/LICENSE)
 
-<!--- BEGIN_TF_DOCS --->
+
 This module creates all infrastructure necessary to enable Amazon Inspector.
 
 The following resources will be created:
@@ -14,6 +14,15 @@ The following resources will be created:
  - Define assessment duration
  - Include ruleset in the Inspector assessment. (CVE,CIS,Security Best Pratices and Network reachability)
 
+
+ # Optional
+
+- enable_scheduled_event - Default true; A way to disable Inspector from running on a schedule
+- schedule_expression - Default rate(30 days); How often to run an Inspector assessment. See AWS Schedule Expression documentation for more info on formatting.s
+- assessment_duration - Default 3600; How long the assessment runs in seconds.
+    
+
+<!--- BEGIN_TF_DOCS --->
 
 ## Requirements
 
