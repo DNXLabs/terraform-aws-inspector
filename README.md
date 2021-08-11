@@ -1,7 +1,7 @@
 # terraform-aws-inspector
 
-[![Lint Status](https://github.com/DNXLabs/terraform-aws-template/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-aws-template/actions)
-[![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-template)](https://github.com/DNXLabs/terraform-aws-template/blob/master/LICENSE)
+[![Lint Status](https://github.com/DNXLabs/terraform-aws-inspector/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-aws-inspector/actions)
+[![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-inspector)](https://github.com/DNXLabs/terraform-aws-inspector/blob/master/LICENSE)
 
 <!--- BEGIN_TF_DOCS --->
 This module creates all infrastructure necessary to enable Amazon Inspector.
@@ -51,4 +51,4 @@ Module managed by [DNX Solutions](https://github.com/DNXLabs).
 
 ## License
 
-Apache 2 Licensed. See [LICENSE](https://github.com/DNXLabs/terraform-aws-template/blob/master/LICENSE) for full details.
+Apache 2 Licensed. See [LICENSE](https://github.com/DNXLabs/terraform-aws-inspector/blob/master/LICENSE) for full details.
