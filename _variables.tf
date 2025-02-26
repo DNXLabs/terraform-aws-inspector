@@ -1,13 +1,15 @@
 variable "region" {
   description = "AWS Region."
+  type        = string
 }
+
 variable "name_prefix" {
   description = "name prefix"
-  default     = ""
-}
-variable "aws_account_id" {
   type        = string
-  description = "AWS Account ID"
+}
+
+variable "aws_account_id" {
+  type = string
 }
 
 variable "assessment_duration" {
@@ -27,12 +29,7 @@ variable "schedule_expression" {
   description = "AWS Schedule Expression: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html"
 }
 
-variable "assessment_ruleset" {
+variable "enabled_rules" {
   type        = list(string)
-  description = <<-DOC
-    A list of AWS Inspector rules that should run on a periodic basis.
-    Possible rules: Common Vulnerabilities and Exposures(CVE) / CIS Operating System Security Configuration Benchmarks (CIS)/ Network Reachability / Security Best Practices
-    Get the Inspector rule arns by region: https://docs.aws.amazon.com/inspector/latest/userguide/inspector_rules-arns.html
-    example: assessment_ruleset   = ["arn:aws:inspector:us-east-2:646659390643:rulespackage/0-m8r61nnh"]
-  DOC
+  description = "List of rules that inspector should run. Valid values are `cve`, `cis`, `nr`, `sbp`"
 }
